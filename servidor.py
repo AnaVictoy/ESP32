@@ -12,7 +12,7 @@ while True:
         if len(content) ==0:
             break
         else:
-            print(content)
+            client.sendall(content)
 
     print("Closing connection")
     client.close()
